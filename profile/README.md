@@ -1,1 +1,1 @@
-## 26-2 Hanyang University Software Engineering Project
+## 26-2 Hanyang University: ITE351-AI-Projects-2026
