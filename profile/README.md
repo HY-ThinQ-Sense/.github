@@ -49,12 +49,10 @@ The production concept targets on-device inference; the academic prototype may r
 
 | Repository | Purpose |
 | --- | --- |
-| [thinq-sense](https://github.com/HY-ThinQ-Sense/ThinQ-Sense) | Context engine, agent, API, digital twin and demo integration |
-| [thinq-sense-ai](https://github.com/HY-ThinQ-Sense/ThinQ-Sense-ai) | Perception, sensor fusion, model experiments and evaluations |
-| [thinq-sense-docs](https://github.com/HY-ThinQ-Sense/ThinQ-Sense-docs) | CSE406 requirements, specifications, design, testing and submissions |
-| [thinq-sense-blog](https://github.com/HY-ThinQ-Sense/ThinQ-Sense-blog) | ITE351 proposal and technical progress blog |
-
-> Repository links become active after each repository is created.
+| [ThinQ-Sense](https://github.com/HY-ThinQ-Sense/ThinQ-Sense) | Context engine, agent, API, digital twin and demo integration |
+| [ThinQ-Sense-ai](https://github.com/HY-ThinQ-Sense/ThinQ-Sense-ai) | Perception, sensor fusion, model experiments and evaluations |
+| [ThinQ-Sense-docs](https://github.com/HY-ThinQ-Sense/ThinQ-Sense-docs) | CSE406 requirements, specifications, design, testing and submissions |
+| [ThinQ-Sense-blog](https://github.com/HY-ThinQ-Sense/ThinQ-Sense-blog) | ITE351 proposal and technical progress blog |
 
 ## Courses
 
