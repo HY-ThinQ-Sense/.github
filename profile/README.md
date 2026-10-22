@@ -1,4 +1,4 @@
-# ThinQ Sense
+# ThinQ EYEAR
 
 ### A Spatially Aware Multi-Agent System for Predictive and Proactive Smart Home Orchestration
 
@@ -9,7 +9,7 @@ An integrated academic project developed by a four-member team at Hanyang Univer
 
 ## Overview
 
-**ThinQ Sense** is a proposed spatial intelligence and multi-agent orchestration system designed to advance smart homes from reactive automation to predictive, context-aware assistance.
+**ThinQ EYEAR** is a proposed spatial intelligence and multi-agent orchestration system designed to advance smart homes from reactive automation to predictive, context-aware assistance.
 
 The system combines multimodal sensing, human activity recognition, household state modeling, and predictive planning to understand occupants' locations, activities, and potential next actions.
 
@@ -99,10 +99,10 @@ Physical LG appliance integration is outside the initial prototype scope. Applia
 
 | Repository | Description |
 |---|---|
-| [ThinQ-Sense](https://github.com/HY-ThinQ-Sense/ThinQ-Sense) | World model, multi-agent orchestration, optimization, reinforcement learning, and 3D digital twin |
-| [ThinQ-Sense-ai](https://github.com/HY-ThinQ-Sense/ThinQ-Sense-ai) | Spatial perception, multimodal sensor fusion, prediction models, and AI experiments |
-| [ThinQ-Sense-docs](https://github.com/HY-ThinQ-Sense/ThinQ-Sense-docs) | Software engineering requirements, specifications, design, verification, and reports |
-| [ThinQ-Sense-blog](https://github.com/HY-ThinQ-Sense/ThinQ-Sense-blog) | AI research proposal, technical progress, experimental results, and research documentation |
+| [ThinQ-EYEAR](https://github.com/HY-ThinQ-EYEAR/ThinQ-EYEAR) | World model, multi-agent orchestration, optimization, reinforcement learning, and 3D digital twin |
+| [ThinQ-EYEAR-ai](https://github.com/HY-ThinQ-EYEAR/ThinQ-EYEAR-ai) | Spatial perception, multimodal sensor fusion, prediction models, and AI experiments |
+| [ThinQ-EYEAR-docs](https://github.com/HY-ThinQ-EYEAR/ThinQ-EYEAR-docs) | Software engineering requirements, specifications, design, verification, and reports |
+| [ThinQ-EYEAR-blog](https://github.com/HY-ThinQ-EYEAR/ThinQ-EYEAR-blog) | AI research proposal, technical progress, experimental results, and research documentation |
 
 ## Academic Context
 
@@ -118,18 +118,18 @@ Focuses on AI/ML techniques, spatial perception, prediction, sensor fusion, and 
 
 | Member | Organization | Primary Responsibility |
 |---|---|---|
-| Member 1 | Hanyang University | Perception & Sensor Fusion |
-| Member 2 | Hanyang University | World Model & Prediction |
-| Member 3 | Hanyang University | Multi-Agent Planning & Optimization |
-| Member 4 | Hanyang University | 3D Digital Twin & Integration |
+| Jungbin Song | Hanyang University | Develop and integrate AI models, coordinate AI system interfaces, and evaluate model performance. |
+| Banseok Shin | Hanyang University | Implement perception models, context-aware AI services, and testable AI components. |
+| Hyochang Lee | Hanyang University | Develop AI-driven interaction features, integrate models with application services, and validate AI behavior against household-use scenarios. |
+| Yewon Joung | Hanyang University | Develop frontend and backend components, implement user interactions, and integrate application services. |
 
 ## Project Resources
 
-- Technical Documentation: [ThinQ-Sense-docs](https://github.com/HY-ThinQ-Sense/ThinQ-Sense-docs)
-- AI Research Blog: [ThinQ-Sense-blog](https://github.com/HY-ThinQ-Sense/ThinQ-Sense-blog)
+- Technical Documentation: [ThinQ-EYEAR-docs](https://github.com/HY-ThinQ-EYEAR/ThinQ-EYEAR-docs)
+- AI Research Blog: [ThinQ-EYEAR-blog](https://github.com/HY-ThinQ-EYEAR/ThinQ-EYEAR-blog)
 - Demonstration Video: Coming soon
 - Final Presentation: Coming soon
 
 ---
 
-**Disclaimer:** ThinQ Sense is an independent academic project and proposed smart home system concept. It is not an official LG Electronics product. Actual ThinQ ON firmware integration and physical appliance control have not been implemented or verified.
+**Disclaimer:** ThinQ EYEAR is an independent academic project and proposed smart home system concept. It is not an official LG Electronics product. Actual ThinQ ON firmware integration and physical appliance control have not been implemented or verified.
