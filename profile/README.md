@@ -1,135 +1,65 @@
-# ThinQ EYEAR
+# EYEAR
 
-### A Spatially Aware Multi-Agent System for Predictive and Proactive Smart Home Orchestration
+**Eyes and Ears for Proactive Smart Home Orchestration through Spatial Awareness and Multi-Agent Collaboration**
 
-**26-2 Hanyang University**  
-**CSE406-SW-Projects-2026 · ITE351-AI-Projects-2026**
+**Hanyang University · Fall 2026**  
+`CSE406-SW-Projects-2026` · `ITE351-AI-Projects-2026`
 
-An integrated academic project developed by a four-member team at Hanyang University.
+EYEAR (EYE + EAR) is a university project proposing a distributed perception layer and proactive home orchestration system for the LG ThinQ AI Home concept. Multiple **EYEAR Nodes** observe occupants' presence, location, posture, and activity using a **camera, microphone, and mmWave radar**. Small, specialized local perception components generate timestamped **semantic events**, without passing raw audiovisual streams to the central context API.
 
-## Overview
+A **Home World Model** combines observations across rooms. Domain-focused agents propose appliance operations and restrictions, and a **Home Orchestrator** evaluates conflicts, explicit user policies, and device capabilities. A pretrained **LLM supervisor** is an optional/context-interpretation component, not an unrestricted appliance controller; validated decisions are expressed as actionable plans.
 
-**ThinQ EYEAR** is a proposed spatial intelligence and multi-agent orchestration system designed to advance smart homes from reactive automation to predictive, context-aware assistance.
+> **Project status:** Proposed architecture and academic prototype. EYEAR is not an official LG Electronics product. The project does not claim access to ThinQ ON firmware or control of physical LG appliances.
 
-The system combines multimodal sensing, human activity recognition, household state modeling, and predictive planning to understand occupants' locations, activities, and potential next actions.
-
-A central multi-agent orchestrator coordinates specialized appliance agents to dynamically plan, prioritize, and adapt home appliance operations according to user activities, preferences, environmental conditions, and operational constraints.
-
-Rather than relying solely on fixed schedules or explicit user commands, ThinQ Sense aims to enable home appliances to act proactively while minimizing interruptions and unnecessary resource consumption.
-
-## System Architecture
+## Conceptual Architecture
 
 ```text
-Multimodal Spatial Sensing
-(Camera / Microphone / mmWave / IoT)
-                  |
-                  v
-      Local Perception & Fusion
-                  |
-          Semantic Events
-                  |
-                  v
-         Home World Model
-                  |
-                  v
-         Prediction Engine
-                  |
-                  v
-     Multi-Agent Home Orchestrator
-                  |
-       +----------+----------+
-       |          |          |
-    Cleaning    Climate    Quiet/Energy
-     Agent       Agent        Agent
-       |          |          |
-       +----------+----------+
-                  |
-           Policy & Planning
-                  |
-                  v
-        Appliance Action Plans
-                  |
-                  v
-       3D Smart Home Digital Twin
+EYEAR Nodes (Camera + Microphone + mmWave)
+    -> Local vision / audio / radar perception
+    -> Temporal fusion and Semantic Events
+    -> Multi-room Context Engine / Home World Model
+    -> Domain Agents (Cleaning, Quiet/Activity, ...)
+    -> Home Orchestrator (optional pretrained LLM interface)
+    -> Policy and Device-Capability Validator
+    -> Action Plans
+    -> 3D Smart Home / Virtual Appliances
+    -> Execution Feedback to World Model
 ```
 
-## Key Research Areas
+## Representative Scenarios
 
-- **Spatial Awareness:** Real-time human presence, location, posture, and activity recognition.
-- **Multimodal Perception:** Local visual inference and optional radar-based sensing with sensor fusion.
-- **Predictive Modeling:** Learning occupants' activity patterns and estimating future household states.
-- **Multi-Agent Collaboration:** Coordinating specialized agents with potentially competing objectives.
-- **Constraint-Based Planning:** Optimizing appliance operations under occupancy, comfort, noise, and energy constraints.
-- **Adaptive Decision-Making:** Exploring reinforcement learning and preference-based policy adaptation.
-- **3D Digital Twin:** Interactive visualization and evaluation of household events, decisions, and appliance actions.
-- **Privacy by Design:** Processing sensitive sensor data locally and limiting central access to semantic context.
-
-## Representative Use Cases
-
-### Adaptive Robot Cleaning
-
-Dynamically replan robot vacuum cleaning routes based on room occupancy, sleep states, predicted availability, and user interruptions.
-
-### Predictive Sleep Preparation
-
-Anticipate bedtime-related activities and coordinate climate, lighting, and household noise policies before explicit user commands.
-
-### Context-Aware Quiet Home
-
-Coordinate cleaning, laundry, air care, and notifications to reduce disturbances during sleep, remote meetings, and other sensitive activities.
-
-### Personalized Comfort
-
-Adapt room environments based on occupants' locations, activities, and learned preferences while resolving multi-user conflicts.
-
-## Demonstration
-
-The project will demonstrate its decision-making capabilities through an interactive **3D Smart Home Digital Twin**.
-
-The prototype is designed to support two input modes:
-
-1. **Live Sensing:** Real camera and optional radar observations processed into semantic events.
-2. **Scenario Simulation:** Virtual occupants and activities generating the same event format.
-
-Both modes use a shared household world model and multi-agent decision engine.
-
-Physical LG appliance integration is outside the initial prototype scope. Appliance behavior will be evaluated through simulated action execution.
+- **Adaptive Cleaning:** Replan robot-vacuum work as rooms become occupied or available; preserve task goals while honoring user restrictions.
+- **Activity-Aware Quiet Coordination:** Use occupancy and acoustic activity to detect a *possible* call/meeting context, then defer or modify disruptive virtual appliance tasks. Speech activity alone is not proof of a meeting.
+- **Synchronized Sensor Replay:** Replay recorded multimodal observations on a common clock and run perception and planning *during playback*; contrast sensor-driven decisions with authored simulation scenarios.
 
 ## Repositories
 
-| Repository | Description |
-|---|---|
-| [ThinQ-EYEAR](https://github.com/HY-ThinQ-EYEAR/ThinQ-EYEAR) | World model, multi-agent orchestration, optimization, reinforcement learning, and 3D digital twin |
-| [ThinQ-EYEAR-ai](https://github.com/HY-ThinQ-EYEAR/ThinQ-EYEAR-ai) | Spatial perception, multimodal sensor fusion, prediction models, and AI experiments |
-| [ThinQ-EYEAR-docs](https://github.com/HY-ThinQ-EYEAR/ThinQ-EYEAR-docs) | Software engineering requirements, specifications, design, verification, and reports |
-| [ThinQ-EYEAR-blog](https://github.com/HY-ThinQ-EYEAR/ThinQ-EYEAR-blog) | AI research proposal, technical progress, experimental results, and research documentation |
+| Repository | Purpose |
+| --- | --- |
+| [LG-EYEAR](https://github.com/HY-LG-EYEAR/LG-EYEAR) | Context engine, domain agents, orchestrator, constraints, API, and 3D smart-home demo |
+| [LG-EYEAR-ai](https://github.com/HY-LG-EYEAR/LG-EYEAR-ai) | Local perception, multimodal sensing/fusion, model experiments and evaluations |
+| [LG-EYEAR-docs](https://github.com/HY-LG-EYEAR/LG-EYEAR-docs) | CSE406 IEEE LaTeX submissions, requirements, specifications, design, and testing |
+| [LG-EYEAR-blog](https://github.com/HY-LG-EYEAR/LG-EYEAR-blog) | ITE351 project proposal, technical blog, AI experiments, and research findings |
 
-## Academic Context
+## Team
 
-**CSE406 — Software Engineering**
+| Member | Affiliation | Project role |
+| --- | --- | --- |
+| Jungbin Song | Dept. Information Systems, Hanyang University | AI Engineer |
+| Banseok Shin | Dept. Information Systems, Hanyang University | AI Engineer |
+| Hyochang Lee | Dept. Information Systems, Hanyang University | AI Engineer |
+| Yewon Joung | Dept. Information Systems, Hanyang University | Full-stack Engineer |
 
-Focuses on software requirements, system architecture, multi-agent integration, verification, testing, and demonstration.
+## Coursework
 
-**ITE351 — AI & Applications**
+**CSE406 — Software Engineering**: IEEE-format proposal/requirements (Oct. 23/30), specification and development environment (Nov. 6/13), followed by design, implementation, integration, and final demonstration as announced.
 
-Focuses on AI/ML techniques, spatial perception, prediction, sensor fusion, and learning-based decision-making.
+**ITE351 — AI & Applications**: Initial group/blog/proposal submission (Nov. 4); subsequent milestones follow course announcements.
 
-## Team Members
+## Demo and Reports
 
-| Member | Organization | Primary Responsibility |
-|---|---|---|
-| Jungbin Song | Hanyang University | Develop and integrate AI models, coordinate AI system interfaces, and evaluate model performance. |
-| Banseok Shin | Hanyang University | Implement perception models, context-aware AI services, and testable AI components. |
-| Hyochang Lee | Hanyang University | Develop AI-driven interaction features, integrate models with application services, and validate AI behavior against household-use scenarios. |
-| Yewon Joung | Hanyang University | Develop frontend and backend components, implement user interactions, and integrate application services. |
+- [CSE406 documents](https://github.com/HY-LG-EYEAR/LG-EYEAR-docs)
+- [ITE351 research blog](https://github.com/HY-LG-EYEAR/LG-EYEAR-blog)
+- 3D demo, evaluation results, and presentation: *to be added*
 
-## Project Resources
-
-- Technical Documentation: [ThinQ-EYEAR-docs](https://github.com/HY-ThinQ-EYEAR/ThinQ-EYEAR-docs)
-- AI Research Blog: [ThinQ-EYEAR-blog](https://github.com/HY-ThinQ-EYEAR/ThinQ-EYEAR-blog)
-- Demonstration Video: Coming soon
-- Final Presentation: Coming soon
-
----
-
-**Disclaimer:** ThinQ EYEAR is an independent academic project and proposed smart home system concept. It is not an official LG Electronics product. Actual ThinQ ON firmware integration and physical appliance control have not been implemented or verified.
+*LG, ThinQ, and ThinQ ON are trademarks of their respective owners. This is an independent academic project conducted in an LG-related course context.*
